@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquidAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1>SquidAI</h1>
+        <p>Why do you want to earn a billion dollars?</p>
+        <div class="input-container">
+            <input type="text" id="userAnswer" placeholder="Enter your answer...">
+            <button onclick="startGame()">Submit</button>
+        </div>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <h1>SquidAI Ethical Dilemma</h1>
+        <p id="dilemma">You must choose wisely...</p>
+        <div class="button-container">
+            <button onclick="answer('option1')">Option 1</button>
+            <button onclick="answer('option2')">Option 2</button>
+        </div>
+    </div>
+
+    <div id="death-screen" class="screen hidden">
+        <h1>YOU DIED</h1>
+        <button class="resurrect-button" onclick="resurrect()">Buy SquidAI now to resurrect</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
